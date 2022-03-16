@@ -1,15 +1,19 @@
 ---
-slug: "demo2"
-date: "2018-01-01"
-title: "Please, Tell Me More"
-description: "Sed vehicula mauris vel felis faucibus placerat. Quisque sed justo quis tellus aliquam tincidunt. Vestibulum sit amet ante sit amet nibh accumsan viverra."
+slug: "demo-with-dashes-1"
+date: "2018-02-01"
+title: "The One Time And The One Thing"
+description: "Morbi ut dapibus sem. Interdum et malesuada fames ac ante ipsum primis in faucibus."
 published: true
 banner: "./banner.png"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rhoncus sem non eros semper posuere. Quisque scelerisque non diam in fringilla. Praesent dignissim eros vel urna tincidunt pharetra. Fusce cursus, est quis vestibulum facilisis, elit diam convallis orci, eu convallis metus leo vitae massa. Mauris id nisi ut erat auctor fermentum. Sed purus nisl, hendrerit id suscipit sit amet, consectetur ut magna. Donec cursus accumsan lectus vel porta. Proin ac mollis arcu. Integer nec dictum sapien, dignissim semper dui. Quisque porta ipsum sit amet lorem feugiat tincidunt. Nam vel purus dolor. Donec semper tortor lacus, sed blandit sapien rutrum id. Fusce gravida tortor ultrices magna auctor, at bibendum est pellentesque. Vivamus porttitor ultrices varius.
+# Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rhoncus sem non eros semper posuere. 
 
-Phasellus nulla justo, auctor in ornare sit amet, volutpat at sapien. Donec non turpis nec ligula finibus finibus quis id lorem. Vestibulum sodales ornare lorem, sed dapibus justo sagittis non. Curabitur rutrum, eros quis iaculis commodo, sem turpis blandit quam, eu egestas risus nunc quis sapien. Aliquam erat volutpat. In leo massa, pellentesque non mollis ac, tristique vitae neque. Donec nunc magna, pharetra quis iaculis sit amet, molestie non est. Sed ornare urna id molestie convallis.
+## Quisque scelerisque non diam in fringilla. Praesent dignissim eros vel urna tincidunt pharetra. 
+Fusce cursus, est quis vestibulum facilisis, elit diam convallis orci, eu convallis metus leo vitae massa. Mauris id nisi ut erat auctor fermentum. Sed purus nisl, hendrerit id suscipit sit amet, consectetur ut magna. Donec cursus accumsan lectus vel porta. Proin ac mollis arcu. Integer nec dictum sapien, dignissim semper dui. Quisque porta ipsum sit amet lorem feugiat tincidunt. Nam vel purus dolor. Donec semper tortor lacus, sed blandit sapien rutrum id. Fusce gravida tortor ultrices magna auctor, at bibendum est pellentesque. Vivamus porttitor ultrices varius.
+
+## Phasellus nulla justo, auctor in ornare sit amet, volutpat at sapien. Donec non turpis nec ligula finibus finibus quis id lorem. 
+Vestibulum sodales ornare lorem, sed dapibus justo sagittis non. Curabitur rutrum, eros quis iaculis commodo, sem turpis blandit quam, eu egestas risus nunc quis sapien. Aliquam erat volutpat. In leo massa, pellentesque non mollis ac, tristique vitae neque. Donec nunc magna, pharetra quis iaculis sit amet, molestie non est. Sed ornare urna id molestie convallis.
 
 Cras ut nulla pellentesque, convallis orci vel, ultricies augue. Cras imperdiet magna sit amet vestibulum dictum. Maecenas ac tortor vel nisl luctus blandit. Nunc bibendum commodo aliquet. Nunc urna tellus, sagittis vitae mollis vel, venenatis et lectus. Morbi lacus felis, fringilla a feugiat eget, imperdiet ac odio. Duis tortor tellus, vulputate eget arcu eget, pulvinar porta odio.
 

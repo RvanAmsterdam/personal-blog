@@ -1,10 +1,10 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
 import styles from "../styles/Home.module.scss";
 import fs from "fs";
+import { parseMarkdown } from "../components/parseMarkdown";
 
-const Home: NextPage = ({ slugs }: any) => {
+const Home: NextPage = ({ articles }: any) => {
   return (
     <div className={"container"}>
       <Head>
@@ -16,10 +16,10 @@ const Home: NextPage = ({ slugs }: any) => {
       <main className={styles.main}>
         <h1>header</h1>
 
-        {slugs.map((slug: string) => {
+        {articles.map((article: any) => {
           return (
-            <li key={slug}>
-              <a href={"/blog/" + slug}>{slug}</a>
+            <li key={article.slug}>
+              <a href={"/blog/" + article.slug}>{article.slug}</a>
             </li>
           );
         })}
@@ -30,11 +30,11 @@ const Home: NextPage = ({ slugs }: any) => {
 
 export const getStaticProps = async () => {
   const files = fs.readdirSync("posts");
-  const slugs = files.map((filename) => filename.replace(".md", ""));
+  const articles = files.map((file) => parseMarkdown(file).metadata);
 
   return {
     props: {
-      slugs,
+      articles
     },
   };
 };

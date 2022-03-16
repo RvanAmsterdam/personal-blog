@@ -1,15 +1,14 @@
 import React from "react";
 import fs from "fs";
-import path from "path";
-import matter from "gray-matter";
 import Head from "next/head";
 import Markdown from 'markdown-to-jsx';
+import { parseMarkdown } from "../../components/parseMarkdown";
 
-const Post = ({ data, content }: any) => {
+const Post = ({ metadata, content }: any) => {
   return (
     <>
       <Head>
-        <title>{data.title}</title>
+        <title>{metadata.title}</title>
       </Head>
       <Markdown>
         {content}
@@ -33,13 +32,12 @@ export const getStaticPaths = async () => {
 };
 
 export const getStaticProps = async ({ params: { postSlug } }: any) => {
-  const markdownWithMetadata = fs.readFileSync(path.join("posts", postSlug + ".md")).toString();
-  const parsedMarkdown = matter(markdownWithMetadata);
+  const currentArticle = parseMarkdown(postSlug + ".md");
 
   return {
     props: {
-      content: parsedMarkdown.content,
-      data: parsedMarkdown.data
+      metadata: currentArticle.metadata,
+      content: currentArticle.content
     },
   };
 };
