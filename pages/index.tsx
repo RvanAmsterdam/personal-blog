@@ -4,7 +4,7 @@ import styles from "../styles/Home.module.scss";
 import fs from "fs";
 import { parseMarkdown } from "../components/parseMarkdown";
 
-const Home: NextPage = ({ articles }: any) => {
+const Home: NextPage = ({ sortedArticles }: any) => {
   return (
     <div className={"container"}>
       <Head>
@@ -16,7 +16,7 @@ const Home: NextPage = ({ articles }: any) => {
       <main className={styles.main}>
         <h1>header</h1>
 
-        {articles.map((article: any) => {
+        {sortedArticles.map((article: any) => {
           return (
             <li key={article.slug}>
               <a href={"/blog/" + article.slug}>{article.slug}</a>
@@ -31,10 +31,11 @@ const Home: NextPage = ({ articles }: any) => {
 export const getStaticProps = async () => {
   const files = fs.readdirSync("posts");
   const articles = files.map((file) => parseMarkdown(file).metadata);
+  const sortedArticles = articles.sort((a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf())
 
   return {
     props: {
-      articles
+      sortedArticles
     },
   };
 };
