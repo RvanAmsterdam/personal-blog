@@ -1,2 +1,9 @@
+/* Base */
+@import "base/base";
+
 /* Pages */
 @import "pages/index";
+@import "pages/home";
+
+/* Components */
+@import "components/cards/card-article";

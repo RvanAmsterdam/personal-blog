@@ -4,7 +4,7 @@ date: "2016-02-01"
 title: "The One Time And The One Thing"
 description: "Morbi ut dapibus sem. Interdum et malesuada fames ac ante ipsum primis in faucibus."
 published: true
-banner: "./banner.png"
+banner: "/media/demo1/img1.jpg"
 ---
 
 # Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rhoncus sem non eros semper posuere. 
