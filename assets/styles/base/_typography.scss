@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'Georama';
+  src: url('../../fonts/Georama/Georama-VariableFont_wdth\,wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../../fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: $font-family-base;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-family-headings;
+    font-weight: bold;
+}

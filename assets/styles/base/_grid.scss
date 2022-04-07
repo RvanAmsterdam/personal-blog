@@ -1,0 +1,15 @@
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1300px;
+}
+
+.grid {
+  display: grid;
+
+  &-column-2 {
+    grid-template-columns: 2fr 1fr;
+  }
+}

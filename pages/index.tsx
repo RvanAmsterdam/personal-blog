@@ -1,10 +1,10 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import styles from "../styles/Home.module.scss";
 import fs from "fs";
 import { parseMarkdown } from "../components/parseMarkdown";
-import { ArticleProps } from "../types/ArticleProps";
 import { Articles } from "../components/Articles";
+import { CardAbout } from "../components/cards/CardAbout";
+import AboutInfo from "../assets/data/about.json";
 
 const Home: NextPage = ({ articlesSortedByDate }: any) => {
   return (
@@ -15,14 +15,16 @@ const Home: NextPage = ({ articlesSortedByDate }: any) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <section>
-          <h1>header</h1>
-          <Articles articles={articlesSortedByDate} />
-        </section>
-        <section>
-          <h2>about card</h2>
-        </section>
+      <main>
+        <div className="grid grid-column-2">
+          <section>
+            <h2>Latest articles</h2>
+            <Articles articles={articlesSortedByDate} />
+          </section>
+          <section>
+            <CardAbout {...AboutInfo} />
+          </section>
+        </div>
       </main>
     </div>
   );
