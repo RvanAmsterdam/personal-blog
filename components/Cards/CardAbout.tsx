@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { ThemeSwitch } from "../theme/ThemeSwitch";
 import { Icon, IconNames } from "../utils/icon/Icon";
 
 type SocialsProps = {
@@ -22,13 +23,20 @@ type AboutProps = {
 
 export const CardAbout = (props: AboutProps) => {
   return (
-    <div>
-      <Image src={props.image} alt="Profile picture" layout="fill" />
-      <h2>{props.name}</h2>
+    <div className="card card-about">
+      <ThemeSwitch />
+      <div className="card__img image-container">
+        <Image src={props.image} alt="Profile picture" layout="fill" />
+      </div>
+      <h2 className="card__name">{props.name}</h2>
 
-      {props.tags.map((tag) => (
-        <span key={tag}>{tag}</span>
-      ))}
+      <ul className="card__tag-list">
+        {props.tags.map((tag) => (
+          <li className="card__tag" key={tag}>
+            {tag}
+          </li>
+        ))}
+      </ul>
 
       <p>{props.shortDescription}</p>
 

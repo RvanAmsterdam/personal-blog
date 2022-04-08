@@ -1,0 +1,43 @@
+$transition: all 0.5s ease;
+
+.theme-switch {
+  /* Hide the input */
+  input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+
+  &__trail {
+    display: flex;
+    align-items: center;
+    width: 60px;
+    height: 35px;
+    background: $turquoise;
+    border-radius: 2.5em;
+    transition: $transition;
+    cursor: pointer;
+  }
+
+  &__handler {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background: $greensea;
+    border-radius: 50%;
+    transition: $transition;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  }
+
+  input[type="checkbox"]:checked + .theme-switch__trail {
+    background: $night;
+
+    .theme-switch__handler {
+      margin-left: 50%;
+      background: $midnight;
+      color: #fff;
+    }
+  }
+}

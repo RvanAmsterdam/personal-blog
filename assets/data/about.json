@@ -1,7 +1,7 @@
 {
   "image": "/images/profile-picture.jpeg",
   "name": "Rowin van Amsterdam",
-  "shortDescription": "",
+  "shortDescription": "Front-end & Web3 developer. Building webapplications with ReactJS, TypeScript and Solidity",
   "callToAction": {
     "linkText": "Get in touch",
     "linkTo": ""

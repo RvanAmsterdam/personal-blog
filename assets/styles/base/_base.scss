@@ -3,6 +3,13 @@ body {
   background-color: #f6f6f6;
 }
 
+.icon {
+  position: relative;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+}
+
 .link {
   text-decoration: none;
   color: inherit;
@@ -10,4 +17,9 @@ body {
   &:focus {
     text-decoration: none;
   }
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
 }

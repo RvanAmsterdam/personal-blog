@@ -12,4 +12,7 @@
 @import "pages/home";
 
 /* Components */
+@import "components/cards/cards";
+@import "components/cards/card-about";
 @import "components/cards/card-article";
+@import "components/theme-switch";

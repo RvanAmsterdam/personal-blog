@@ -1,16 +1,16 @@
 import React from "react";
+import { lazy } from "react";
 import loadable from "@loadable/component";
 
-export const IconNames = ["twitter", "github", "linkedin", "instagram"] as const;
+export const IconNames = ["twitter", "github", "linkedin", "instagram", "sun", "moon"] as const;
 
 interface IconProps {
-  name?: typeof IconNames[number];
+  name: typeof IconNames[number];
   className?: string;
-  attributeDataName?: string;
 }
 
-export const Icon: React.FC<IconProps> = React.memo(({ name, className, attributeDataName }) => {
-  const iconClass = `icon__svg icon__svg--${name} ${className ? className : ""}`;
+export const Icon: React.FC<IconProps> = React.memo(({ name, className }) => {
+  const iconClass = `icon icon--${name} ${className ? className : ""}`;
 
   if (!name || !IconNames.includes(name)) {
     return null;
@@ -18,7 +18,7 @@ export const Icon: React.FC<IconProps> = React.memo(({ name, className, attribut
 
   const IconComponent = loadable(() => import(`./icons/${name}`), {
     resolveComponent: (components) => {
-      const icon = React.cloneElement(components.default(), { className: iconClass, "data-name": attributeDataName });
+      const icon = React.cloneElement(components.default(), { className: `${iconClass}` });
       return () => icon;
     },
   });
