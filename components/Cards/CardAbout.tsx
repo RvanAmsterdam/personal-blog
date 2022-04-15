@@ -38,15 +38,22 @@ export const CardAbout = (props: AboutProps) => {
         ))}
       </ul>
 
-      <p>{props.shortDescription}</p>
+      <p className="card__description">{props.shortDescription}</p>
 
-      <a href={props.callToAction.linkTo}>{props.callToAction.linkText}</a>
+      <a className="card__cta btn btn-primary link" href={props.callToAction.linkTo}>
+        <Icon name={"mail"} />
+        {props.callToAction.linkText}
+      </a>
 
-      {props.socials.map((social) => (
-        <a href={social.link} target="_blank" rel="noreferrer" key={social.platform}>
-          <Icon name={social.icon as typeof IconNames[number]} />
-        </a>
-      ))}
+      <ul className="card__socials">
+        {props.socials.map((social) => (
+          <li className="card__socials-item" key={social.platform}>
+            <a className="link" href={social.link} target="_blank" rel="noreferrer">
+              <Icon name={social.icon as typeof IconNames[number]} />
+            </a>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };

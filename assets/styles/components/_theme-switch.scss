@@ -1,19 +1,20 @@
 $transition: all 0.5s ease;
 
 .theme-switch {
-  /* Hide the input */
+  /* #region Hide input */
   input[type="checkbox"] {
     position: absolute;
     opacity: 0;
     z-index: -1;
   }
+  /* #endregion */
 
   &__trail {
     display: flex;
     align-items: center;
-    width: 60px;
-    height: 35px;
-    background: $turquoise;
+    width: 40px;
+    height: 15px;
+    background: $color05;
     border-radius: 2.5em;
     transition: $transition;
     cursor: pointer;
@@ -23,9 +24,10 @@ $transition: all 0.5s ease;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30px;
-    height: 30px;
-    background: $greensea;
+    width: 25px;
+    height: 25px;
+    background: $color01;
+    color: #fff;
     border-radius: 50%;
     transition: $transition;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
@@ -35,7 +37,7 @@ $transition: all 0.5s ease;
     background: $night;
 
     .theme-switch__handler {
-      margin-left: 50%;
+      transform: translateX(70%);
       background: $midnight;
       color: #fff;
     }

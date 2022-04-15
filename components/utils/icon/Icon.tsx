@@ -2,7 +2,7 @@ import React from "react";
 import { lazy } from "react";
 import loadable from "@loadable/component";
 
-export const IconNames = ["twitter", "github", "linkedin", "instagram", "sun", "moon"] as const;
+export const IconNames = ["twitter", "github", "linkedin", "instagram", "sun", "moon", "mail", "clock"] as const;
 
 interface IconProps {
   name: typeof IconNames[number];

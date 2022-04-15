@@ -13,17 +13,59 @@
     border-radius: 10px;
   }
 
-  &__name {
-    text-align: center;
+  &__title {
+    margin-top: 2px;
+  }
+
+  &__metadata {
+    color: $bw03;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 20px;
+
+    .icon {
+      margin-right: 5px;
+    }
   }
 
   &__tag-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    column-gap: 5px;
+    row-gap: 5px;
   }
 
   &__tag {
-    background-color: red;
+    background-color: $bw01;
+    color: $bw02;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 30px;
+  }
+
+  &__cta {
+    margin: 0 auto;
+    text-transform: uppercase;
+    gap: 10px;
+  }
+
+  &__socials {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    &-item {
+      background-color: $bw01;
+      color: $bw02;
+      border-radius: 5px;
+      padding: 10px;
+
+      .icon {
+        display: block;
+      }
+    }
   }
 }

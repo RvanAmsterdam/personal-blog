@@ -1,14 +1,44 @@
 .card-about {
   border-radius: 20px;
+  text-align: center;
+  padding: 10px;
   
   .theme-switch {
     margin: 10px 15px 0 auto;
   }
-  
+
   .card__img {
     width: 250px;
     height: 250px;
     border-radius: 50%;
     margin: 10px auto;
   }
+
+  .card__name {
+    margin-top: 10px;
+    background: hsla(217, 100%, 50%, 1);
+    background: linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+
+  .card__tag-list {
+    margin-top: 10px;
+  }
+
+  .card__description {
+    margin-top: 20px;
+  }
+
+  .card__cta {
+    margin-top: 15px;
+  }
+
+  .card__socials {
+    margin-top: 25px;
+  }
+  
 }
