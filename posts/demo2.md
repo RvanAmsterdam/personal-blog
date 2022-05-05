@@ -1,6 +1,8 @@
 ---
 slug: "demo2"
 date: "2018-01-01"
+author: "Rowin van Amsterdam"
+pfp: "/images/profile-picture.jpeg"
 title: "Please, Tell Me More"
 description: "Sed vehicula mauris vel felis faucibus placerat. Quisque sed justo quis tellus aliquam tincidunt. Vestibulum sit amet ante sit amet nibh accumsan viverra."
 published: true

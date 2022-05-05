@@ -4,7 +4,7 @@ import Head from "next/head";
 import Markdown from "markdown-to-jsx";
 import { parseMarkdown } from "../../components/parseMarkdown";
 import Image from "next/image";
-import { Icon } from "../../components/utils/icon/Icon";
+import { ArticleMetadata } from "../../components/ArticleMetadata";
 
 const Post = ({ metadata, content }: any) => {
   return (
@@ -18,15 +18,9 @@ const Post = ({ metadata, content }: any) => {
           <Image src={metadata.banner} alt="Thumbnail" layout="fill" />
         </section>
 
-        <section className="content container container--700">
-          <div className="content__metadata">
-            <Icon name={"clock"} />
-            <time>{metadata.date}</time>
-          </div>
-
-          <h1 className="content__title">{metadata.title}</h1>
-
-          <div className="author"></div>
+        <section className="article__content container container--700">
+          <h1 className="metadata__title">{metadata.title}</h1>
+          <ArticleMetadata {...metadata} />
           <Markdown>{content}</Markdown>
         </section>
       </main>
@@ -41,15 +35,15 @@ export const getStaticPaths = async () => {
   return {
     paths: filesWithoutExtension.map((filename) => ({
       params: {
-        postSlug: filename,
+        articleSlug: filename,
       },
     })),
     fallback: false,
   };
 };
 
-export const getStaticProps = async ({ params: { postSlug } }: any) => {
-  const currentArticle = parseMarkdown(postSlug + ".md");
+export const getStaticProps = async ({ params: { articleSlug } }: any) => {
+  const currentArticle = parseMarkdown(articleSlug + ".md");
 
   return {
     props: {

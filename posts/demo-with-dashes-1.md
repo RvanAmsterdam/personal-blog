@@ -1,6 +1,8 @@
 ---
 slug: "demo-with-dashes-1"
 date: "2016-02-01"
+author: "Rowin van Amsterdam"
+pfp: "/images/profile-picture.jpeg"
 title: "The One Time And The One Thing"
 description: "Morbi ut dapibus sem. Interdum et malesuada fames ac ante ipsum primis in faucibus."
 published: true
