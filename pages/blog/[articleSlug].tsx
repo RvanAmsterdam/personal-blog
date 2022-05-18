@@ -4,7 +4,7 @@ import Head from "next/head";
 import Markdown from "markdown-to-jsx";
 import { parseMarkdown } from "../../components/parseMarkdown";
 import Image from "next/image";
-import { ArticleMetadata } from "../../components/ArticleMetadata";
+import { ArticleMeta } from "../../components/ArticleMeta";
 
 const Post = ({ metadata, content }: any) => {
   return (
@@ -20,8 +20,8 @@ const Post = ({ metadata, content }: any) => {
 
         <section className="article__content container container--700">
           <h1 className="metadata__title">{metadata.title}</h1>
-          <ArticleMetadata {...metadata} />
-          <Markdown>{content}</Markdown>
+          <ArticleMeta metadata={metadata} content={content} />
+          <Markdown className="markdown-article" options={{ wrapper: 'article' }}>{content}</Markdown>
         </section>
       </main>
     </div>

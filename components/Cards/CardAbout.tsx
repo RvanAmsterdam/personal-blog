@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { ThemeSwitch } from "../theme/ThemeSwitch";
 import { Icon, IconNames } from "../utils/icon/Icon";
 
 type SocialsProps = {
@@ -24,7 +23,6 @@ type AboutProps = {
 export const CardAbout = (props: AboutProps) => {
   return (
     <div className="card card-about">
-      <ThemeSwitch />
       <div className="card__img image-container">
         <Image src={props.image} alt="Profile picture" layout="fill" />
       </div>
@@ -40,7 +38,7 @@ export const CardAbout = (props: AboutProps) => {
 
       <p className="card__description">{props.shortDescription}</p>
 
-      <a className="card__cta btn btn-primary link" href={props.callToAction.linkTo}>
+      <a className="card__cta btn btn-primary" href={props.callToAction.linkTo}>
         <Icon name={"mail"} />
         {props.callToAction.linkText}
       </a>
@@ -48,7 +46,7 @@ export const CardAbout = (props: AboutProps) => {
       <ul className="card__socials">
         {props.socials.map((social) => (
           <li className="card__socials-item" key={social.platform}>
-            <a className="link" href={social.link} target="_blank" rel="noreferrer">
+            <a href={social.link} target="_blank" rel="noreferrer">
               <Icon name={social.icon as typeof IconNames[number]} />
             </a>
           </li>

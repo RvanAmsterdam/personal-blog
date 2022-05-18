@@ -7,6 +7,7 @@ import { CardAbout } from "../components/cards/CardAbout";
 import AboutInfo from "../assets/data/about.json";
 import { useContext } from "react";
 import { ThemeContext, ThemeContextProps } from "../context/ThemeContext";
+import { Hero } from "../components/layout/Hero";
 
 const Home: NextPage = ({ articlesSortedByDate }: any) => {
   const { theme } = useContext<ThemeContextProps>(ThemeContext);
@@ -20,9 +21,7 @@ const Home: NextPage = ({ articlesSortedByDate }: any) => {
       </Head>
 
       <main>
-        <section className="hero">
-          <h1 className="hero__headline container">Sharing my coding-related learnings</h1>
-        </section>
+        <Hero />
         <div className="container grid grid-column-2">
           <section>
             <Articles articles={articlesSortedByDate} />

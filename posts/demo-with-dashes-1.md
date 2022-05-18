@@ -3,7 +3,7 @@ slug: "demo-with-dashes-1"
 date: "2016-02-01"
 author: "Rowin van Amsterdam"
 pfp: "/images/profile-picture.jpeg"
-title: "The One Time And The One Thing"
+title: "Things I did to learn more about statemanagement and tools like Redux"
 description: "Morbi ut dapibus sem. Interdum et malesuada fames ac ante ipsum primis in faucibus."
 published: true
 banner: "/media/demo1/img1.jpg"

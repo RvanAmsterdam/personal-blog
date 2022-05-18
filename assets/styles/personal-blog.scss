@@ -10,13 +10,15 @@
 
 /* Layout */
 @import "layout/buttons";
+@import "layout/header";
 
 /* Pages */
 @import "pages/home";
 @import "pages/article";
 
 /* Components */
-@import "components/cards/cards";
+@import "components/cards/card";
 @import "components/cards/card-about";
 @import "components/cards/card-article";
 @import "components/theme-switch";
+@import "components/markdown";

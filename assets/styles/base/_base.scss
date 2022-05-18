@@ -1,6 +1,5 @@
 body {
-  // background-color: #f8fbfe;
-  background-color: #f6f6f6;
+  background-color: #f8fbfe;
 }
 
 .icon {
@@ -8,15 +7,6 @@ body {
   width: 1em;
   height: 1em;
   fill: currentColor;
-}
-
-.link {
-  text-decoration: none;
-  color: inherit;
-
-  &:focus {
-    text-decoration: none;
-  }
 }
 
 .image-container {

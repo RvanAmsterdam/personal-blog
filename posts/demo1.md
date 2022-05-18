@@ -3,7 +3,7 @@ slug: "demo1"
 date: "2018-02-01"
 author: "Rowin van Amsterdam"
 pfp: "/images/profile-picture.jpeg"
-title: "The One Time And The One Thing"
+title: "Phasellus nulla justo, auctor in ornare sit amet, volutpat at sapien. Donec non turpis nec ligula finibus finibus quis id lorem. "
 description: "Morbi ut dapibus sem. Interdum et malesuada fames ac ante ipsum primis in faucibus."
 published: true
 banner: "/media/demo1/img1.jpg"
