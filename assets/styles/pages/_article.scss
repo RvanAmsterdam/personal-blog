@@ -11,25 +11,4 @@
   &__content {
     border: 1px solid red;
   }
-
-  .post-meta {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 14px;
-
-    &__author-picture {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-    }
-
-    &__title {
-      margin-top: 10px;
-    }
-
-    &__author {
-      font-style: normal;
-    }
-  }
 }

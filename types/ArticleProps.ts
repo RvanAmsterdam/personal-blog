@@ -1,8 +1,6 @@
+import { ArticleMetadataProps } from "./ArticleMetadataProps";
+
 export type ArticleProps = {
-  slug: string;
-  date: Date;
-  title: string;
-  description: string;
-  published: boolean;
-  banner: string;
-}
+   content: string;
+   metadata: ArticleMetadataProps;
+  }

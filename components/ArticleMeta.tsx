@@ -1,29 +1,19 @@
-import Image from "next/image";
+import { ArticleProps } from "../types/ArticleProps";
 import { estimateReadingTime } from "./estimateReadingTime";
 import { formatDate } from "./formatDate";
+import { ImageComponent } from "./ImageComponent";
 
-type MetadataProps = {
-    author: string;
-    pfp: string;
-    date: Date;
-}
-type ArticleMetaProps = {
-    metadata: MetadataProps; 
-    content: string;
-};
-
-export const ArticleMeta = (props: ArticleMetaProps) => {
+export const ArticleMeta = (props: ArticleProps) => {
     const formattedDate = formatDate(props.metadata.date);
     const estimatedReadingTime = estimateReadingTime(props.content);
 
     return (
-        <section className="post-meta">
-            <div className="post-meta__author-picture image-container">
-                <Image src={props.metadata.pfp} alt="Thumbnail" layout="fill" />
-            </div>
+        <section className="article-meta">
 
-            <div className="post-meta__info">
-                <address className="post-meta__author">{props.metadata.author}</address>
+            <ImageComponent className="article-meta__author-picture" src={props.metadata.pfp} alt="Profile picture" />
+
+            <div className="article-meta__info">
+                <address className="article-meta__author-name">{props.metadata.author}</address>
                 <time>{formattedDate} • {estimatedReadingTime} min read</time>
             </div>
         </section>

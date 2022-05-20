@@ -1,6 +1,7 @@
 .card {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
   
   @include themify($themes) {
     background-color: themed(backgroundColor);

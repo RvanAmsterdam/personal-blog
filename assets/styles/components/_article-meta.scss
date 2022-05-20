@@ -1,0 +1,16 @@
+.article-meta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+
+    &__author-picture {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+
+    &__author-name {
+      font-style: normal;
+    }
+  }

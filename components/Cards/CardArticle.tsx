@@ -1,16 +1,19 @@
 import { ArticleProps } from "../../types/ArticleProps";
+import { ArticleMeta } from "../ArticleMeta";
 import { ImageComponent } from "../ImageComponent";
 
-export const CardArticle = (props: ArticleProps) => {
-  return (
-    <a className="card card-article link" href={"/blog/" + props.slug}>
+export const CardArticle = ({ content, metadata }: ArticleProps) => {
+    return (
+        <a className="card card-article link" href={"/blog/" + metadata.slug}>
+            <ImageComponent src={metadata.banner} className="card__thumbnail " alt="Article thumbnail" />
 
-      <ImageComponent src={props.banner} className="card__thumbnail " alt="Article thumbnail" />
+            <section className="card__content">
+                    <h2 className="card__title">{metadata.title}</h2>
+                    <p className="card__description">{metadata.description}</p>
+              
 
-      <section className="card__content">
-        <h2 className="card__title">{props.title}</h2>
-        <p className="card__description">{props.description}</p>
-      </section>
-    </a>
-  );
+                <ArticleMeta metadata={metadata} content={content} />
+            </section>
+        </a>
+    );
 };

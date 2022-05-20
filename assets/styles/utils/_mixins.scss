@@ -1,5 +1,17 @@
 @import './themes';
 
+@mixin respond-to($size, $max-size: null) {
+  @if ($max-size) {
+      @media only screen and (min-width: $size) and (max-width: $max-size) {
+          @content;
+      }
+  } @else {
+      @media only screen and (min-width: $size) {
+          @content;
+      }
+  }
+}
+
 @mixin themify($themes: $themes) {
   @each $theme, $map in $themes {
 
