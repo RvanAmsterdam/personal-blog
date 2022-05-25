@@ -3,6 +3,8 @@
     align-items: center;
     gap: 10px;
     font-size: 14px;
+    line-height: 20px;
+    color: $bw02;
 
     &__author-picture {
       width: 40px;
@@ -12,5 +14,7 @@
 
     &__author-name {
       font-style: normal;
+      color: $color-brand-blue-lochmara;
+      font-weight: bold;
     }
   }

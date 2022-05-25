@@ -21,16 +21,33 @@
 
         &__title {
             font-size: 1.25em;
-            margin-bottom: 10px;
+            line-height: 28px;
         }
 
         &__description {
             margin: 12px 0 12px;
-            line-height: 1.4;
+            line-height: 24px;
             flex-grow: 1;
         }
     }
     .article-meta {
         margin-top: 28px;
+    }
+
+    &:hover {
+        box-shadow: 0 2px 10px -3px rgba(0, 0, 0, 0.2);
+        transform: translateY(-2px);
+        transition: transform .2s ease-in-out, box-shadow .2s ease-in-out;
+
+        .card__title {
+            color: $color-brand-blue-azure-radiance;
+            transition: all .2s ease-in-out;
+        }
+    }
+
+    &:active {
+        .card__title {
+            color: red;
+        }
     }
 }

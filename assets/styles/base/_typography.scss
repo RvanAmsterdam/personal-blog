@@ -1,61 +1,61 @@
 @font-face {
-  font-family: 'Inter UI Regular';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../../fonts/Inter-UI-Regular.woff') format('woff');
-  font-display: fallback;
+    font-family: "Inter UI Regular";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../../fonts/Inter-UI-Regular.woff") format("woff");
+    font-display: fallback;
 }
 @font-face {
-  font-family: 'Inter UI Regular Italic';
-  font-style: italic;
-  font-weight: 400;
-  src: url('../../fonts/Inter-UI-Italic.woff') format('woff');
-  font-display: fallback;
+    font-family: "Inter UI Regular Italic";
+    font-style: italic;
+    font-weight: 400;
+    src: url("../../fonts/Inter-UI-Italic.woff") format("woff");
+    font-display: fallback;
 }
 @font-face {
-  font-family: 'Inter UI SemiBold';
-  font-style: normal;
-  font-weight: 600;
-  src: url('../../fonts/Inter-UI-SemiBold.woff') format('woff');
-  font-display: fallback;
+    font-family: "Inter UI SemiBold";
+    font-style: normal;
+    font-weight: 600;
+    src: url("../../fonts/Inter-UI-SemiBold.woff") format("woff");
+    font-display: fallback;
 }
 @font-face {
-  font-family: 'Inter UI SemiBold Italic';
-  font-style: italic;
-  font-weight: 600;
-  src: url('../../fonts/Inter-UI-SemiBoldItalic.woff') format('woff');
-  font-display: fallback;
+    font-family: "Inter UI SemiBold Italic";
+    font-style: italic;
+    font-weight: 600;
+    src: url("../../fonts/Inter-UI-SemiBoldItalic.woff") format("woff");
+    font-display: fallback;
 }
 @font-face {
-  font-family: 'Inter UI Bold';
-  font-style: normal;
-  font-weight: 700;
-  src: url('../../fonts/Inter-UI-Bold.woff') format('woff');
-  font-display: fallback;
+    font-family: "Inter UI Bold";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../../fonts/Inter-UI-Bold.woff") format("woff");
+    font-display: fallback;
 }
 @font-face {
-  font-family: 'Inter UI Bold Italic';
-  font-style: italic;
-  font-weight: 700;
-  src: url('../../fonts/Inter-UI-BoldItalic.woff') format('woff');
-  font-display: fallback;
+    font-family: "Inter UI Bold Italic";
+    font-style: italic;
+    font-weight: 700;
+    src: url("../../fonts/Inter-UI-BoldItalic.woff") format("woff");
+    font-display: fallback;
 }
 
 body {
-  font-family: $font-family-base;
+    font-family: $font-family-base;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 
-  &:link {
-      cursor: pointer;
-  }
+    &:link {
+        cursor: pointer;
+    }
 
-  &:focus {
-      text-decoration: none;
-  }
+    &:focus {
+        text-decoration: none;
+    }
 }
 
 h1,
@@ -64,27 +64,28 @@ h3,
 h4,
 h5,
 h6 {
+    color: $color-default-headings;
     font-family: $font-family-headings;
     font-weight: bold;
 }
 
 h1 {
-  font-size: 2.4em;
-  font-weight: bold;
+    font-size: 2.4em;
+    font-weight: bold;
 }
 
 h2 {
-  font-size: 1.5em;
+    font-size: 1.5em;
 }
 
 h3 {
-  font-size: 1.4em;
+    font-size: 1.4em;
 }
 
 h4 {
-  font-size: 1.2em;
+    font-size: 1.2em;
 }
 
 .h5 {
-  font-size: 18px;
+    font-size: 18px;
 }
