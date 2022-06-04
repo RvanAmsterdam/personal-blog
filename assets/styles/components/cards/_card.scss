@@ -7,10 +7,6 @@
     background-color: themed(backgroundColor);
   }
 
-
-
-  
-
   &__tag-list {
     display: flex;
     flex-wrap: wrap;
@@ -31,22 +27,5 @@
     margin: 0 auto;
     text-transform: uppercase;
     gap: 10px;
-  }
-
-  &__socials {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-
-    &-item {
-      background-color: $bw01;
-      color: $bw02;
-      border-radius: 5px;
-      padding: 10px;
-
-      .icon {
-        display: block;
-      }
-    }
   }
 }

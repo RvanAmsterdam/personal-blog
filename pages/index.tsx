@@ -23,7 +23,7 @@ const Home: NextPage = ({ blogaArticlesSortedByDate }: any) => {
             <main>
                 <Hero />
 
-                <div className="home__content container container--1200">
+                <div className="home__content container container--1600">
                     <CardAbout {...AboutInfo} />
                     <ArticleCardsList articles={blogaArticlesSortedByDate} />
                 </div>

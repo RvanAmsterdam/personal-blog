@@ -10,31 +10,5 @@
     "Software Engineer",
     "Web3 Developer",
     "Background in UX Design"
-  ],
-  "socials": [
-    {
-      "platform": "Twitter",
-      "icon": "twitter",
-      "username": "",
-      "link": ""
-    },
-    {
-      "platform": "Instagram",
-      "icon": "instagram",
-      "username": "",
-      "link": ""
-    },
-    {
-      "platform": "LinkedIn",
-      "icon": "linkedin",
-      "username": "",
-      "link": ""
-    },
-    {
-      "platform": "GitHub",
-      "icon": "github",
-      "username": "",
-      "link": ""
-    }
   ]
 }

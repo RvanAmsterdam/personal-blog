@@ -11,6 +11,16 @@ const socialPlatforms = [
         icon: "github",
         link: "https://github.com/rowinva",
     },
+    {
+        name: "Instagram",
+        icon: "instagram",
+        link: "https://instagram.com/rowinva",
+    },
+    {
+        name: "LinkedIn",
+        icon: "linkedin",
+        link: "https://linkedin.com/in/rowinvanamsterdam",
+    },
 ];
 
 export const Socials = () => {
@@ -18,7 +28,7 @@ export const Socials = () => {
         <ul className="socials">
             {socialPlatforms.map((social) => (
                 <li key={social.name}>
-                    <a href={social.link} target="_blank" rel="noreferrer">
+                    <a className="socials__item" href={social.link} target="_blank" rel="noreferrer">
                         <Icon name={social.icon as typeof IconNames[number]} />
                     </a>
                 </li>

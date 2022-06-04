@@ -1,12 +1,6 @@
 import Image from "next/image";
+import { Socials } from "../Socials";
 import { Icon, IconNames } from "../utils/icon/Icon";
-
-type SocialsProps = {
-  platform: string;
-  icon: typeof IconNames[number] | string;
-  username: string;
-  link: string;
-};
 
 type AboutProps = {
   image: string;
@@ -17,7 +11,6 @@ type AboutProps = {
     linkTo: string;
   };
   tags: string[];
-  socials: SocialsProps[];
 };
 
 export const CardAbout = (props: AboutProps) => {
@@ -43,15 +36,7 @@ export const CardAbout = (props: AboutProps) => {
         {props.callToAction.linkText}
       </a>
 
-      <ul className="card__socials">
-        {props.socials.map((social) => (
-          <li className="card__socials-item" key={social.platform}>
-            <a href={social.link} target="_blank" rel="noreferrer">
-              <Icon name={social.icon as typeof IconNames[number]} />
-            </a>
-          </li>
-        ))}
-      </ul>
+      <Socials />
     </div>
   );
 };

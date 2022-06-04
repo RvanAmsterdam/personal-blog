@@ -1,0 +1,14 @@
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    &__item {
+        display: inline-block;
+        margin: 5px;
+        
+        .icon {
+            display: block;
+        }
+    }
+}

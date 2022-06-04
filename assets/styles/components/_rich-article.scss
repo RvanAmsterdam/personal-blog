@@ -1,0 +1,63 @@
+.rich-article {
+  font-size: 18px;
+
+    h1 {
+      font-size: 40px;
+      margin: 64px 0 16px;
+    }
+  
+    h2 {
+      font-size: 32px;
+      margin: 48px 0 16px;
+    }
+  
+    h3 {
+      font-size: 24px;
+      margin: 32px 0 16px;
+    }
+  
+    p {
+      margin: 24px 0 ;
+      line-height: 1.7;
+    }
+  
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
+  
+    blockquote {
+      margin: 24px 0;
+      border-radius: 5px;
+      padding: 15px;
+      border-left: 4px solid $color-brand-blue-azure-radiance;
+      background-color: rgb(245, 247, 249);
+  
+      p {
+        margin: 0;
+      }
+    }
+  
+    a {
+      text-decoration: underline;
+      color: $color-brand-blue-azure-radiance;
+    }
+  
+    ul,
+    ol {
+      margin: 24px 0 24px 20px;
+      list-style-type: unset;
+      line-height: 1.5;
+
+    
+    }
+
+    code {
+      font-size: 14px;
+      background-color: #ececec;
+      padding: 4px;
+      color: #222;
+      border-radius: 5px;
+    }
+  }
+  

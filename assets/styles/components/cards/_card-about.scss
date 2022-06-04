@@ -34,9 +34,17 @@
         &__cta {
             margin-top: 15px;
         }
+    }
 
-        &__socials {
-            margin-top: 25px;
+    .socials {
+        margin-top: 25px;
+
+        &__item {
+            background-color: $bw01;
+            padding: 10px;
+            margin: 0;
+            color: $bw02;
+            border-radius: 5px;
         }
     }
 }
