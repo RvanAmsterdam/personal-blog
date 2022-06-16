@@ -1,6 +1,6 @@
 import React from "react";
 import MarkdownToJsx from "markdown-to-jsx";
-import { RichArticleCodeBlock } from "./components/RichArticleCodeBlock";
+import { PreBlock } from "./components/RichArticlePreBlock";
 
 type MarkdownProps = {
     value: string;
@@ -12,9 +12,10 @@ export const Markdown = (props: MarkdownProps) => {
     const markDownToJsxOptions = {
         forceBlock: true,
         wrapper: props.wrapper,
-        // overrides: {
-        //    code: RichArticleCodeBlock
-        // }
+        forceWrapper: true,
+        overrides: {
+            pre: PreBlock
+        }
     };
 
     return (
