@@ -2,17 +2,19 @@
     border-radius: 8px;
     text-align: center;
     padding: 10px;
-    max-width: 360px;
+    max-width: 300px;
+    z-index: 1;
 
     .card {
         &__img {
-            width: 200px;
-            height: 200px;
+            width: 160px;
+            height: 160px;
             border-radius: 50%;
             margin: 10px auto;
         }
 
         &__name {
+            font-size: 22px;
             margin-top: 10px;
             background: hsla(217, 100%, 50%, 1);
             background: linear-gradient(to bottom right, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
@@ -25,26 +27,39 @@
 
         &__tag-list {
             margin-top: 10px;
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            column-gap: 5px;
+            row-gap: 5px;
+        }
+
+        &__tag {
+            background-color: $bw01;
+            color: $bw02;
+            font-size: 12px;
+            padding: 5px 10px;
+            border-radius: 5px;
         }
 
         &__description {
-            margin-top: 20px;
+            margin-top: 10px;
+            line-height: 24px;
         }
 
         &__cta {
-            margin-top: 15px;
+            margin: 25px auto 0;
+            text-transform: uppercase;
+            gap: 10px;
         }
     }
 
     .socials {
-        margin-top: 25px;
+        margin-top: 15px;
 
         &__item {
-            background-color: $bw01;
-            padding: 10px;
-            margin: 0;
             color: $bw02;
-            border-radius: 5px;
         }
     }
 }

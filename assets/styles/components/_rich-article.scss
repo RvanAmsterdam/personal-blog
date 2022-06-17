@@ -39,7 +39,15 @@
   
     a {
       text-decoration: underline;
-      color: $color-brand-blue-azure-radiance;
+      color: $color-brand-blue-cyan;
+
+      &:hover {
+        color: darken($color-brand-blue-cyan, 5);
+      }
+
+      &:active {
+        color: darken($color-brand-blue-cyan, 10);
+      }
     }
   
     ul,

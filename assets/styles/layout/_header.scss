@@ -1,9 +1,10 @@
-$color-default: $color-grey-dark; 
+$color-default: $bw02; 
 $color-hover: $color-brand-blue-cyan;
-$color-active: #737373;
+$color-active: $color-brand-blue-cerulean;
 
 .header {
     color: $color-default;
+    background-color: #fff;
 
     .container {
         display: grid;

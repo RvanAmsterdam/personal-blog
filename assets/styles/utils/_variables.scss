@@ -1,20 +1,13 @@
 /*
 ----------------------------------------------------------------------------
-Default colors
-----------------------------------------------------------------------------
-*/
-$color-default-headings: #131415; 
-$color-default-text: #131415; 
-/*
-----------------------------------------------------------------------------
 Brand colors
 ----------------------------------------------------------------------------
 */
-$color-brand-blue-cerulean: #40DBF2;
-$color-brand-blue-cyan: #01F1FF;
-$color-brand-blue-lochmara: #007EBE;
-$color-brand-blue-azure-radiance: #008BFF;
-$color-brand-blue-port-gore: #191638;
+$color-brand-blue-cerulean: #4bc9ff;
+$color-brand-blue-cyan: #0faef1;
+$color-brand-blue-lochmara: #1070a7;
+$color-brand-blue-azure-radiance: #084367;
+$color-brand-blue-port-gore: #1a2e3b;
 
 /*
 ----------------------------------------------------------------------------
@@ -38,6 +31,16 @@ Action colors
 $color-action-error: #ff0000;
 $color-action-valid: #00ff00;
 $color-action-warning: #fca300;
+
+/*
+----------------------------------------------------------------------------
+Default colors
+----------------------------------------------------------------------------
+*/
+// $color-default-headings: #131415; 
+$color-default-headings: $color-brand-blue-port-gore; 
+$color-default-text: $color-brand-blue-port-gore;
+
 
 
 

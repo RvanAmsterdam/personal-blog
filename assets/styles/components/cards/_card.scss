@@ -6,26 +6,4 @@
   @include themify($themes) {
     background-color: themed(backgroundColor);
   }
-
-  &__tag-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    column-gap: 5px;
-    row-gap: 5px;
-  }
-
-  &__tag {
-    background-color: $bw01;
-    color: $bw02;
-    font-size: 12px;
-    padding: 5px 10px;
-    border-radius: 30px;
-  }
-
-  &__cta {
-    margin: 0 auto;
-    text-transform: uppercase;
-    gap: 10px;
-  }
 }

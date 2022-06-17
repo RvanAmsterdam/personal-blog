@@ -5,7 +5,20 @@
 
     &__item {
         display: inline-block;
-        margin: 5px;
+        padding: 10px;
+        border-radius: 50%;
+        transition: all .1s ease;
+
+
+        &:hover {
+            color: $color-brand-blue-cerulean;
+            background-color: $bw01;
+            
+          }
+    
+          &:active {
+            color: darken($color-brand-blue-cerulean, 10);
+          }
         
         .icon {
             display: block;

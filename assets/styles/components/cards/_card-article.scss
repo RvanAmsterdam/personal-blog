@@ -40,14 +40,14 @@
         transition: transform .2s ease-in-out, box-shadow .2s ease-in-out;
 
         .card__title {
-            color: $color-brand-blue-azure-radiance;
+            color: $color-brand-blue-cyan;
             transition: all .2s ease-in-out;
         }
     }
 
     &:active {
         .card__title {
-            color: red;
+            color: darken($color-brand-blue-cyan, 10);
         }
     }
 }

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Socials } from "../Socials";
-import { Icon, IconNames } from "../utils/icon/Icon";
+import { Icon } from "../utils/icon/Icon";
 
 type AboutProps = {
   image: string;
@@ -29,7 +29,7 @@ export const CardAbout = (props: AboutProps) => {
         ))}
       </ul>
 
-      <p className="card__description">{props.shortDescription}</p>
+      {/* <p className="card__description">{props.shortDescription}</p> */}
 
       <a className="card__cta btn btn-primary" href={props.callToAction.linkTo}>
         <Icon name={"mail"} />
