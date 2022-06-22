@@ -55,28 +55,32 @@ h2,
 h3,
 h4,
 h5 {
-    color: $color-default-headings;
     font-family: $font-family-headings;
     font-weight: bold;
 }
 
-h1 {
+h1,
+.h1 {
     font-size: 40px;
     font-weight: bold;
 }
 
-h2 {
+h2,
+.h2 {
     font-size: 34px;
 }
 
-h3 {
+h3,
+.h3 {
     font-size: 28px;
 }
 
-h4 {
+h4,
+.h4 {
     font-size: 22px;
 }
 
-h5 {
+h5,
+.h5 {
     font-size: 18px;
 }

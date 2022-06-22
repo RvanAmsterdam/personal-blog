@@ -23,6 +23,14 @@
     img {
       width: 100%;
       border-radius: 10px;
+
+      & + figcaption {
+        display: block;
+        font-size: 14px;
+        margin-left: auto;
+        color: $color-grey;
+        text-align: right;
+      }
     }
   
     blockquote {

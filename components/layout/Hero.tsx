@@ -1,10 +1,14 @@
 export const Hero = () => {
     return (
         <section className="hero">
-            <div className="hero__subheadline">
-                <h2>Web2</h2>•<h2>Web3</h2>
+            <div id="stars"></div>
+            <div id="stars2"></div>
+            <div id="stars3"></div>
+
+            <div id="title" className="hero__title-container container">
+                <h2 className="hero__subtitle"><span>Web2 • Web3</span></h2>
+                <h1 className="hero__title"><span>Sharing my code-related learnings</span></h1>
             </div>
-            <h1 className="hero__headline container">Sharing my coding-related learnings</h1>
         </section>
     );
 };

@@ -1,10 +1,12 @@
-import React from "react";
+import React, { ElementType, ReactElement } from "react";
 import MarkdownToJsx from "markdown-to-jsx";
-import { PreBlock } from "./components/RichArticlePreBlock";
+import { RichArticlePreBlock } from "./components/RichArticlePreBlock";
+import { RichArticleLink } from "./components/RichArticleLink";
 
 type MarkdownProps = {
     value: string;
-    wrapper?: typeof React.Fragment;
+    openExternalLinksInNewTab?: boolean;
+    wrapper?: ElementType;
     className?: string;
 };
 
@@ -14,15 +16,17 @@ export const Markdown = (props: MarkdownProps) => {
         wrapper: props.wrapper,
         forceWrapper: true,
         overrides: {
-            pre: PreBlock
+            pre: RichArticlePreBlock,
+            a: {
+                component: RichArticleLink,
+                props: { openExternalLinksInNewTab: props.openExternalLinksInNewTab }
+            },
         }
     };
 
     return (
-        <div className="markdown">
             <MarkdownToJsx className="rich-article" options={markDownToJsxOptions}>
                 {props.value}
             </MarkdownToJsx>
-        </div>
     );
 };

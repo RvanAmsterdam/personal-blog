@@ -8,6 +8,17 @@
     background-size: cover;
     background: transparent no-repeat 50%;
     margin-bottom: 50px;
+
+    &-caption {
+      position: absolute;
+      color: #fff;
+      font-size: 12px;
+      bottom: 0px;
+      right: 0px;
+      background-color: rgba(0,0,0,.4);
+      padding: 7px 10px;
+      border-radius: 3px 0 0 0;
+    }
   }
 
   &__title {

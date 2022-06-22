@@ -1,10 +1,10 @@
 import { RichArticleCodeBlock } from "./RichArticleCodeBlock";
 
-type PreBlockProps = {
+type RichArticlePreBlockProps = {
     children: JSX.Element | JSX.Element[];
 };
 
-export const PreBlock = ({ children, ...rest }: PreBlockProps) => {
+export const RichArticlePreBlock = ({ children, ...rest }: RichArticlePreBlockProps) => {
     if ("type" in children && children["type"] === "code") {
         return RichArticleCodeBlock(children["props"]);
     }
