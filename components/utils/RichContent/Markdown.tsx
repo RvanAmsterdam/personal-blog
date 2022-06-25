@@ -2,6 +2,7 @@ import React, { ElementType, ReactElement } from "react";
 import MarkdownToJsx from "markdown-to-jsx";
 import { RichArticlePreBlock } from "./components/RichArticlePreBlock";
 import { RichArticleLink } from "./components/RichArticleLink";
+import { RichArticleBlockquote } from "./components/RichArticleBlockquote";
 
 type MarkdownProps = {
     value: string;
@@ -17,6 +18,7 @@ export const Markdown = (props: MarkdownProps) => {
         forceWrapper: true,
         overrides: {
             pre: RichArticlePreBlock,
+            blockquote: RichArticleBlockquote,
             a: {
                 component: RichArticleLink,
                 props: { openExternalLinksInNewTab: props.openExternalLinksInNewTab }
