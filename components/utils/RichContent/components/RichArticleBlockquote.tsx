@@ -8,7 +8,7 @@ export const RichArticleBlockquote = (props: RichArticleBlockquoteProps) => {
     return (
         <blockquote>
             <Icon name={"bell"} />
-            <p>{props.children}</p>
+            <span>{props.children}</span>
         </blockquote>
     );
 };
