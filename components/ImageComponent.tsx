@@ -8,7 +8,6 @@ type ImageComponentProps = {
 };
 
 export const ImageComponent = (props: ImageComponentProps) => {
-    console.log(props)
     return (
         <div className={`image-container ${props.className ? props.className : ""}`}>
             <Image src={props.src} alt={props.alt} title={props.title} layout="fill" />
