@@ -3,7 +3,7 @@ import Head from "next/head";
 import fs from "fs";
 import { parseMarkdown } from "../components/parseMarkdown";
 import { ArticleCardsList } from "../components/ArticleCardsList";
-import { CardAbout } from "../components/cards/CardAbout";
+import { CardAbout } from "../components/Cards/CardAbout";
 import AboutInfo from "../assets/data/about.json";
 import { useContext } from "react";
 import { ThemeContext, ThemeContextProps } from "../context/ThemeContext";

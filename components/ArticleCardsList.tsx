@@ -1,5 +1,5 @@
 import { ArticleProps } from "../types/ArticleProps";
-import { CardArticle } from "./cards/CardArticle";
+import { CardArticle } from "./Cards/CardArticle";
 
 type ArticleCardsListProps = {
     articles: ArticleProps[];
