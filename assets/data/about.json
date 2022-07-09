@@ -1,10 +1,10 @@
 {
-  "image": "/images/profile-picture.jpeg",
+  "image": "/images/profile-picture.jpg",
   "name": "Rowin van Amsterdam",
   "shortDescription": "Front-end & Web3 developer. Building webapplications with ReactJS, TypeScript and Solidity",
   "callToAction": {
     "linkText": "Get in touch",
-    "linkTo": ""
+    "linkTo": "mailto:rowinvanamsterdam@rva-services.nl"
   },
   "tags": [
     "Software Engineer",

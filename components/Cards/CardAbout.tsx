@@ -14,11 +14,14 @@ type AboutProps = {
 };
 
 export const CardAbout = (props: AboutProps) => {
+  
   return (
-    <div className="card card-about">
+    <div className={`card-about `}>
       <div className="card__img image-container">
         <Image src={props.image} alt="Profile picture" layout="fill" />
       </div>
+
+      <div>
       <h2 className="card__name">{props.name}</h2>
 
       <ul className="card__tag-list">
@@ -37,6 +40,7 @@ export const CardAbout = (props: AboutProps) => {
       </a>
 
       <Socials />
+      </div>
     </div>
   );
 };

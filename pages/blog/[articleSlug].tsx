@@ -5,30 +5,17 @@ import { parseMarkdown } from "../../components/parseMarkdown";
 import Image from "next/image";
 import { ArticleMeta } from "../../components/ArticleMeta";
 import { Markdown } from "../../components/utils/RichContent/Markdown";
+import { ImageComponent } from "../../components/ImageComponent";
 
 const ArticlePage = ({ metadata, content }: any) => {
     return (
         <div className="article-page">
             <Head>
-                <title>{metadata.title}</title>
+                <title>{metadata.title} • rowinvanamsterdam</title>
             </Head>
 
             <main>
-                <section className="article-page__banner">
-                    <Image src={metadata.banner} alt={metadata.banner_alt ? metadata.banner_alt : "Article banner"} layout="fill" />
-
-                    {metadata.banner_caption && (
-                        <figcaption className="article-page__banner-caption">
-                            {metadata.banner_caption_link ? (
-                                <a href={metadata.banner_caption_link} target="_blank" rel="noreferrer">
-                                    {metadata.banner_caption}
-                                </a>
-                            ) : (
-                                metadata.banner_caption
-                            )}
-                        </figcaption>
-                    )}
-                </section>
+                <ImageComponent className="article-page__banner" src={metadata.banner} alt={metadata.banner_alt ? metadata.banner_alt : "Article banner"} width={1000} height={500} layout="responsive" objectFit="cover" />
 
                 <section className="container container--700">
                     <h1 className="article-page__title">{metadata.title}</h1>

@@ -1,4 +1,7 @@
 .card-about {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
     border-radius: 8px;
     text-align: center;
     padding: 10px;
@@ -11,23 +14,17 @@
             height: 160px;
             border-radius: 50%;
             margin: 10px auto;
+            flex-shrink: 0;
         }
 
         &__name {
             font-size: 22px;
             margin-top: 10px;
-            background: hsla(217, 100%, 50%, 1);
-            background: linear-gradient(to bottom right, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
-            background: -moz-linear-gradient(to bottom right, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
-            background: -webkit-linear-gradient(to bottom right, hsla(217, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            color: $color-brand-blue-cerulean;
         }
 
         &__tag-list {
             margin-top: 10px;
-
             display: flex;
             flex-wrap: wrap;
             justify-content: center;

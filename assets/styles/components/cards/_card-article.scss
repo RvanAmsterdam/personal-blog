@@ -1,7 +1,14 @@
 .card-article {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
     height: 100%;
     border-radius: 8px;
     box-shadow: 0px 2px 10px -3px rgba(0, 0, 0, 0.1);
+
+    @include themify($themes) {
+        background-color: themed(backgroundColor);
+      }
 
     .card {
         &__thumbnail {
@@ -40,14 +47,14 @@
         transition: transform .2s ease-in-out, box-shadow .2s ease-in-out;
 
         .card__title {
-            color: $color-brand-blue-cyan;
+            color: $color-brand-blue-cerulean;
             transition: all .2s ease-in-out;
         }
     }
 
     &:active {
         .card__title {
-            color: darken($color-brand-blue-cyan, 10);
+            color: darken($color-brand-blue-cerulean, 10);
         }
     }
 }

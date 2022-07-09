@@ -4,17 +4,17 @@ const socialPlatforms = [
     {
         name: "Twitter",
         icon: "twitter",
-        link: "https://twitter.com/rowinva",
+        link: "https://twitter.com/R_vanAmsterdam",
     },
     {
         name: "GitHub",
         icon: "github",
-        link: "https://github.com/rowinva",
+        link: "https://github.com/RvanAmsterdam",
     },
     {
         name: "Instagram",
         icon: "instagram",
-        link: "https://instagram.com/rowinva",
+        link: "https://instagram.com/R_vanAmsterdam",
     },
     {
         name: "LinkedIn",
