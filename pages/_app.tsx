@@ -5,9 +5,11 @@ import { Layout } from "../components/layout/Layout";
 import { Analytics } from "../components/utils/Analytics";
 
 function MyApp({ Component, pageProps }: AppProps) {
+    const isProd = process.env.NODE_ENV === "production";
+
     return (
         <>
-            <Analytics />
+            {isProd && <Analytics />}
             <ThemeContextProvider>
                 <Layout>
                     <Component {...pageProps} />
